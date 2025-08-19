@@ -34,6 +34,7 @@ A single HTML file named `index.html`. It should include:
 * Follow clean, readable HTML code structure.
 
 ## ANSWER BELOW
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,50 +71,50 @@ A single HTML file named `index.html`. It should include:
     header p{margin:0; color:var(--muted)}
     .wrap{max-width:1100px; margin:0 auto 80px; padding:0 24px 24px;}
 
-    section{background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 22px; margin: 18px 0; box-shadow: var(--shadow);}
+  section{background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 22px; margin: 18px 0; box-shadow: var(--shadow);}
     section h2{margin:0 0 12px; font-size: 1.35rem}
     section h3{margin:18px 0 8px; font-size: 1.05rem; color: var(--accent)}
     p, li{color: var(--ink)}
     a{color:var(--accent)}
     code,kbd{background:rgba(255,255,255,.08); padding:.15rem .35rem; border-radius:8px}
 
-    /* lists */
+   /* lists */
     ul.check{list-style:none; padding-left:0}
     ul.check li{position:relative; padding-left:28px; margin:8px 0}
     ul.check li::before{content:"✔"; position:absolute; left:0; top:0; color:var(--ok)}
 
-    /* table */
+  /* table */
     table{width:100%; border-collapse:collapse; border-spacing:0; overflow:hidden; border-radius:12px;}
     thead th{background:rgba(167,139,250,.12); color:var(--ink); text-align:left; padding:10px}
     tbody td{padding:10px; border-top:1px solid rgba(255,255,255,.08);}
     tbody tr:nth-child(even) td{background:rgba(255,255,255,.03)}
 
-    figure{margin:0;}
+  figure{margin:0;}
     figcaption{color:var(--muted); font-size:.9rem; margin-top:6px}
 
-    /* form */
+   /* form */
     form{display:grid; gap:18px}
     fieldset{border:1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 16px}
     legend{padding:0 8px; color:var(--accent-2); font-weight:600}
 
-    .grid{display:grid; gap:12px}
+   .grid{display:grid; gap:12px}
     .grid.two{grid-template-columns: repeat(auto-fit, minmax(240px,1fr))}
 
-    label{display:block; font-weight:600; margin-bottom:6px}
+  label{display:block; font-weight:600; margin-bottom:6px}
     .control{display:flex; align-items:center; gap:10px}
     input, select, textarea{width:100%; padding:10px 12px; border-radius: 12px; border:1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06); color:var(--ink)}
     input::placeholder, textarea::placeholder{color:rgba(229,231,235,.55)}
     input:focus, select:focus, textarea:focus{outline:2px solid var(--accent); border-color:transparent}
 
-    .hint{color:var(--muted); font-size:.9rem}
+  .hint{color:var(--muted); font-size:.9rem}
     .req{color:var(--warn)}
 
-    .actions{display:flex; gap:12px; flex-wrap:wrap}
+   .actions{display:flex; gap:12px; flex-wrap:wrap}
     button{cursor:pointer; border:none; border-radius: 14px; padding:12px 16px; font-weight:700; box-shadow: var(--shadow)}
     .primary{background: linear-gradient(180deg, var(--accent), #0ea5b6); color:#0b1220}
     .ghost{background: transparent; color: var(--ink); border:1px solid rgba(255,255,255,.18)}
 
-    .note{background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.35); padding:10px 12px; border-radius:12px}
+   .note{background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.35); padding:10px 12px; border-radius:12px}
     .sr-only{position:absolute; left:-9999px}
   </style>
 </head>
@@ -152,8 +153,7 @@ A single HTML file named `index.html`. It should include:
       </div>
       <p class="note" role="status" aria-live="polite">Purpose: <strong>PLP to Graduate</strong> — everything on this page is geared toward successfully completing the program.</p>
     </section>
-
-    <!-- TABLE SECTION -->
+ <!-- TABLE SECTION -->
     <section aria-labelledby="schedule-title">
       <h2 id="schedule-title">Weekly Study Schedule (Sample)</h2>
       <table aria-describedby="schedule-note">
@@ -200,8 +200,7 @@ A single HTML file named `index.html`. It should include:
       </table>
       <p id="schedule-note" class="hint">This table demonstrates accessible headings and a clear tabular structure.</p>
     </section>
-
-    <!-- MEDIA SECTION (image + audio + video) -->
+  <!-- MEDIA SECTION (image + audio + video) -->
     <section aria-labelledby="media-title">
       <h2 id="media-title">Media: My PLP Story</h2>
       <div class="grid two">
@@ -243,8 +242,7 @@ A single HTML file named `index.html`. It should include:
         </div>
       </div>
         </section>
-
-    <!-- FORM SECTION -->
+  <!-- FORM SECTION -->
     <section aria-labelledby="form-title">
       <h2 id="form-title">PLP Graduation Readiness Form</h2>
       <p class="hint">This form uses native HTML5 validation and accessible labels/fieldsets. Fields marked <span class="req">*</span> are required.</p>
@@ -271,7 +269,7 @@ A single HTML file named `index.html`. It should include:
           </div>
         </fieldset>
 
-        <fieldset>
+  <fieldset>
           <legend>Program Information</legend>
           <div class="grid two">
             <div>
@@ -304,7 +302,7 @@ A single HTML file named `index.html`. It should include:
           </div>
         </fieldset>
 
-        <fieldset>
+  <fieldset>
           <legend>Progress & Portfolio</legend>
           <div class="grid two">
             <div>
@@ -330,7 +328,7 @@ A single HTML file named `index.html`. It should include:
           </div>
         </fieldset>
 
-        <fieldset>
+  <fieldset>
           <legend>Account Security</legend>
           <div class="grid two">
             <div>
@@ -345,7 +343,7 @@ A single HTML file named `index.html`. It should include:
           <p class="hint">Passwords uses uppercase and lower case and is case sensitive</p>
         </fieldset>
 
-        <fieldset>
+   <fieldset>
           <legend>Agreements</legend>
           <div class="control">
             <input id="terms" name="terms" type="checkbox" required />
@@ -365,7 +363,7 @@ A single HTML file named `index.html`. It should include:
           </div>
         </fieldset>
 
-        <div class="actions">
+   <div class="actions">
           <button class="primary" type="submit">Submit Readiness</button>
           <button class="ghost" type="reset">Reset</button>
         </div>
